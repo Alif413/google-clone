@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Span</title>
+    <style>
+        span.box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            border: 5px solid salmon;
+            margin: 10px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 5px;
+            
+        }
+
+        span.first-o{
+            color: rgb(255, 0, 0);
+        }
+        span.second-o{
+            color: rgb(0, 255, 81);
+        }
+
+        span#yearText {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <span class="box"></span>
+    <span class="box"></span>
+    <span class="box"></span>
+
+    <h1>G<span class="first-o">o</span><span class="second-o">o</span>gle</h1>
+
+    <p>Copyright  &copy; <span id="yearText"></span></p>
+
+    <script>
+        var date = new Date();
+        // document.querySelector('#yearText').innerHTML = date.getFullYear();
+        document.getElementById('yearText').innerHTML = date.getFullYear();
+    </script>
+</body>
+</html>
